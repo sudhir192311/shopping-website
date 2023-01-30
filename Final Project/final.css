@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'ArialCE';
+    src: url('fonts/ArialCE.eot');
+    src: url('fonts/ArialCE.eot') format('embedded-opentype'),
+         url('fonts/ArialCE.woff2') format('woff2'),
+         url('fonts/ArialCE.woff') format('woff'),
+         url('fonts/ArialCE.ttf') format('truetype'),
+         url('fonts/ArialCE.svg#ArialCE') format('svg');
+}
+* {
+    box-sizing: border-box;
+    font-family: 'ArialCE';
+}
+
+.section-tb-m {
+    margin: 10vh 0;
+}
+
+.cards {
+    cursor: pointer;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-top {
+    margin-top: 5px;
+    padding: 5px 0;
+}
+
+.header-top .btn,
+.banner-section .btn,
+.sign-up-box .btn {
+    border-radius: 50px;
+}
+
+.nav .nav-item {
+    position: relative;
+    font-weight: 500;
+}
+
+.nav .nav-item::after {
+    content: '';
+    width: 2px;
+    height: 50%;
+    background: gray;
+    right: 0;
+    top: 30%;
+    position: absolute;
+}
+
+.header-top .nav .nav-item:nth-child(3)::after {
+    content: '';
+    width: 0px !important;
+}
+
+.banner-section {
+    max-width: 100%;
+}
+
+.banner-section,
+.sign-up-banner {
+    position: relative;
+}
+
+.banner-section img {
+    width: 100%;
+}
+
+.banner-text {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+}
+
+.how-it-work,
+.what-you-love,
+.expect-from-us {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+
+}
+
+.it-work-header-title h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+
+}
+
+.col-sm-4 .cards {
+    text-align: center;
+}
+
+.container .img-box {
+    width: 100%;
+}
+
+.col-sm-4 .img-box img {
+    width: 45%;
+}
+
+.col-sm-6 .img-box img {
+    width: 100%;
+}
+
+.expect-from-us .btn {
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 7px 16px;
+
+}
+
+
+.what-you-like {
+    margin-top: 20vh;
+}
+
+.what-you-like .img-box {
+    width: 100%;
+    height: auto;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.what-you-like .img-box img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.what-you-like .details-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.show-case .cards {
+    position: relative;
+}
+
+.show-case .col-sm-4 .img-box img {
+    width: 100%;
+    height: 360px;
+}
+
+.show-case .pop-hover-box {
+    background: rgba(255, 255, 255, 0.576);
+
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+.show-case .pop-hover-box .span-icon {
+    background: #343a40;
+
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: white;
+}
+
+.sign-up-banner img {
+    width: 100%;
+}
+
+
+.sign-up-banner .row {
+    width: 100%;
+    margin: 0;
+}
+
+.sign-up-box {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(141, 140, 140), -2px -2px 5px rgb(141, 140, 140);
+    padding: 10px;
+}
+
+.footer-sec .nation {
+    margin: 10px 0;
+    border: 1px solid rgb(59, 58, 58);
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.603);
+    padding: 5px;
+
+    width: 70%;
+}
+
+.footer-sec .footer-text {
+    color: rgb(255, 128, 0);
+    font-weight: 600;
+
+}
+
+.footer-sec .social-links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-sec .social-links li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.footer-sec ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.footer-sec ul li a {
+    color: gray;
+}
+
+.footer-copy {
+    background-color: rgb(20, 19, 20);
+    color: white;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    .expect-from-us .col-sm-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .show-case .pop-hover-box {
+        top: 30%;
+    }
+
+    .sign-up-box {
+        top: 10%;
+    }
+
+    .footer-sec .col-sm-3 {
+        flex: 0 0 34%;
+        max-width: 34%;
+        padding: 5px;
+    }
+
+    .footer-sec .col {
+        flex: 0 0 33%;
+        max-width: 33%;
+        text-align: center;
+    }
+
+    .footer-copy .col-6,
+    .footer-copy .col-6 .justify-content-end {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .what-you-like .img-box {
+        height: 35vh;
+    }
+
+    .sign-up-banner .sign-up-box {
+        width: 50vw;
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-top .row .col-md-6 {
+        text-align: center !important;
+        margin: 5px 0;
+    }
+
+    .header-top .col-md-6 .nav {
+        justify-content: center !important;
+    }
+
+    .what-you-love .p-5 {
+        padding: 10px !important;
+    }
+
+    .what-you-like .col {
+        flex: 0 0 50%;
+        width: 50%;
+
+    }
+
+    .what-you-like .img-box {
+        height: auto;
+    }
+
+    .what-you-love2 .row:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .what-you-love2 .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px;
+
+    }
+
+    .footer-sec .nation {
+        width: 100%;
+    }
+    .col-sm-4 .img-box img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .banner-text {
+        left: 10%;
+    }
+
+    h2 {
+        font-size: 28px !important;
+    }
+
+    .show-case .pop-hover-box {
+        padding: 10px 0;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+
+    .sign-up-banner {
+        margin-top: 40vh;
+    }
+
+    .sign-up-banner .sign-up-box {
+        top: -30%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-text {
+        left: 2%;
+        top: 10%;
+    }
+
+    .what-you-love .row {
+        margin-top: 10px;
+    }
+
+    .show-case .col-sm-4 {
+        margin-top: 10px;
+    }
+
+    .show-case .pop-hover-box {
+        padding: 20px 0;
+        top: 50%;
+
+    }
+
+    .sign-up-banner img {
+        display: none;
+    }
+
+    .sign-up-banner {
+        margin-top: 10vh;
+    }
+
+    .sign-up-banner .sign-up-box {
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 5%;
+    }
+    .how-it-work, .what-you-love, .expect-from-us {
+        margin-top: 4vh;
+    }
+}
+
+
+@media only screen and (max-width: 371px) {
+    .banner-section img {
+        display: none;
+    }
+
+    .banner-section .banner-text {
+        position: relative;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    .expect-from-us .col-sm-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .what-you-like .col {
+        flex: 0 0 100%;
+        width: 100%;
+
+    }
+
+    .footer-sec .col-sm-3,
+    .footer-sec .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-copy .nav {
+        flex-direction: column;
+    }
+
+    .footer-copy .nav .nav-item::after {
+        width: 0;
+    }
+    
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ArialCE';
+    src: url('fonts/ArialCE.eot');
+    src: url('fonts/ArialCE.eot') format('embedded-opentype'),
+         url('fonts/ArialCE.woff2') format('woff2'),
+         url('fonts/ArialCE.woff') format('woff'),
+         url('fonts/ArialCE.ttf') format('truetype'),
+         url('fonts/ArialCE.svg#ArialCE') format('svg');
+}
